@@ -19,7 +19,7 @@ class Posts extends Component {
 
     deletePost = e => {
       e.preventDefault();
-      const id = this.props.match.params.id
+      const id = e.target.key
       console.log(id)
   
       axios
